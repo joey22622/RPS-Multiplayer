@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel ="stylesheet" type="text/css">
+        <!-- <link href="assets/images/favicon.png" rel = "shortcut icon" type="image/png"> -->
+        <title></title>
+    </head>
+    <body>
+        <div class = "test">
+            <div class ="mover"></div>
+        </div>
+        <div class="content">
+            <div class="game-row">
+                <div class="player-wrap">
+                    <div class="players player">
+                        <div class="join-game">
+                            <span>Join Game</span>
+                        </div>
+
+                        <!-- <div class="play-wrap"> -->
+                        <img class="play-img rock" data-play="rock" src="assets/images/rock@4x.png"/>
+                        <img class="play-img paper" data-play="paper" src="assets/images/paper@4x.png"/>
+                        <img class="play-img scissors" data-play="scissors" src="assets/images/scissors@4x.png"/>
+                    </div>
+                </div>
+
+                <div class="arena">
+                        <img class="arena-img rock" data-play="rock" src="assets/images/rock@4x.png"/>
+                        <img class="arena-img paper" data-play="paper" src="assets/images/paper@4x.png"/>
+                        <img class="arena-img scissors" data-play="scissors" src="assets/images/scissors@4x.png"/>
+                </div>
+                <div class="player-wrap">
+                    <div class="players opponent">
+                        <svg version="1.1" class="waiting" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill:#333333;stroke:#FFFFFF;stroke-miterlimit:10;}
+                                .st1{fill:none;stroke:#333333;stroke-width:8;stroke-linecap:round;stroke-miterlimit:10;}
+                                .st2{fill:none;stroke:#333333;stroke-width:8;stroke-miterlimit:10;}
+                            </style>
+                            <path class="st0" d="M99.8,24.4C85,24.7,70.4,29.5,58.4,37.9c-12,8.4-21.4,20.4-26.6,33.9c-5.3,13.5-6.4,28.4-3.2,42.4
+                                c3.1,14,10.4,26.8,20.6,36.6c10.2,9.8,23.2,16.3,36.9,18.7c13.7,2.4,28,0.7,40.5-4.9c12.6-5.5,23.3-14.8,30.5-26.3
+                                c7.3-11.4,11-24.9,10.6-38.3c-0.3,13.3-4.6,26.5-12.2,37.2c-7.6,10.8-18.3,19.1-30.4,23.8c-12.1,4.7-25.5,5.6-38,2.8
+                                c-12.5-2.8-24-9.3-32.6-18.5c-8.7-9.1-14.5-20.8-16.6-33c-2.1-12.2-0.5-25,4.5-36.1c5-11.2,13.3-20.7,23.4-27.1
+                                c10.2-6.4,22.1-9.7,34-9.4c4.2,0.1,7.8-3.2,7.9-7.5s-3.2-7.8-7.5-7.9C100.2,24.4,100.1,24.4,99.8,24.4L99.8,24.4z"/>
+                            <path class="st1" d="M31.9,100"/>
+                            <path class="st2" d="M99.8,167.9"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="message-row">
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="assets/javascript/functions.js" type="text/javascript"></script>
+    </body>
+</html>
+
+
+
+
+
+<!-- <svg version="1.1" class="waiting" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+    <style type="text/css">
+
+    </style>
+    <g id="outer-coal">
+        <path class="outer-coal" d="M93.8,194.5v-37.5l6,6c-13.6,0-27.1-4.2-38.3-11.8c-11.2-7.6-20.1-18.5-25.2-31c-5.1-12.5-6.4-26.5-3.7-39.7
+            c2.7-13.2,9.4-25.5,18.9-34.9c9.5-9.4,21.9-16,35-18.5c13.1-2.5,27-1.1,39.2,4.1c12.3,5.2,23,14,30.3,25.1
+            c7.4,11.1,11.3,24.3,11.2,37.6h-8.4c-0.1-11.6-3.6-23.1-10.1-32.6c-6.5-9.6-15.8-17.1-26.5-21.4c-10.6-4.3-22.6-5.4-33.8-3.1
+            c-11.2,2.3-21.7,8-29.7,16.1c-8,8.1-13.6,18.6-15.7,29.8c-2.2,11.2-0.9,22.9,3.5,33.3c4.4,10.4,11.9,19.5,21.4,25.7
+            c9.4,6.2,20.6,9.5,31.9,9.4l6,0v6v37.5H93.8z"/>
+    </g>
+    <path id="inner-white" class="inner-white" d="M99.8,57.7c19.9,0,36,16.1,36,36s-16.1,36-36,36"/>
+    <path id="inner-coal" class="inner-coal" d="M99.8,129.8c-19.9,0-36-16.1-36-36s16.1-36,36-36"/>
+    <g id="outer-white">
+        <path class="outer-white" d="M159.7,114.1c-3.6,11-10.4,20.9-19.2,28.3c-8.8,7.5-19.8,12.5-31.3,14.2c-11.5,1.8-23.5,0.3-34.2-4.2
+            c-10.8-4.4-20.2-12-27.1-21.5c-6.9-9.4-11.1-20.8-12-32.5c-0.9-11.7,1.4-23.6,6.7-34.1C48,53.9,56.2,44.9,66.2,38.7
+            c10-6.2,21.8-9.6,33.6-9.6l0,0l-1.5,1.5l0-26.2h3l0,26.2V32l-1.5,0l0,0c-11.3-0.1-22.6,3-32.2,8.9c-9.7,5.8-17.7,14.4-23,24.5
+            c-5.3,10-7.6,21.6-6.9,32.9c0.8,11.3,4.7,22.5,11.3,31.8c6.6,9.3,15.8,16.8,26.3,21.3c10.5,4.5,22.3,6.1,33.7,4.5
+            c11.4-1.6,22.3-6.4,31.1-13.8C149.1,134.8,155.9,125,159.7,114.1z"/>
+    </g>
+</svg> -->

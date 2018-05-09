@@ -1,0 +1,149 @@
+.test{
+    height: 15rem;
+    width: 15rem;
+    background: #222222;
+}
+
+
+.mover{
+    position: relative;
+    background: yellow;
+    border-radius: 15px;
+    height: 30px;
+    width: 30px;
+    transition: 1s;
+}
+.test:hover .mover{
+    position: absolute;
+    top: 50%;
+
+}
+.content{
+    display: none;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    font-family: sans-serif;
+    color: #333333;
+    text-transform: uppercase;
+}
+.game-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+
+}
+/* ARENA STYLES */
+.arena .arena-img{
+
+    height: 10rem;
+    width: 10rem;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+/* STYLES FOR BOTH PLAYERS */
+.players,
+.arena{
+    height: 25rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.players{
+    margin: 2rem;
+}
+
+/* PLAYER STYLES */
+.player{
+    background: #333333;
+    border: solid 3px black;
+}
+.join-game{
+    background: white;
+    height: 4rem;
+    border-top: solid black 4px;
+    border-bottom: solid black 4px;
+    width: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+.join-game:hover{
+    padding: 1rem 0;
+}
+.join-game:hover span{
+    font-size: 1.6rem;
+}
+
+.join-game span{
+    font-size: 1.4rem;
+    transition: .3s;
+}
+
+
+.play-img{
+    display: none;
+    opacity: 0;
+    padding: .5rem;
+    margin: .5rem;
+    height: 5rem;
+    width: 5rem;
+    transition: 1s;
+    cursor: pointer;
+    border: solid rgba(0,0,0,0) 2px;
+}
+
+.play-img:hover{
+    background: rgba(0,0,0,.2);
+    opacity: 1;
+    transform: scale(1.3);
+    border-radius: 3px;
+    border: solid rgba(0,0,0,.1) 2px;
+}
+
+/* OPPONENT STYLES */
+
+.opponent{
+    background: #cccccc;
+    border: solid 3px #b3b3b3;
+}
+
+
+
+
+.message-row{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 2rem;
+    letter-spacing: .2rem;
+}
+
+
+.waiting{
+    transition: 1s;
+    opacity: 1;
+    height: 4rem;
+    width: 4rem;
+    animation-name: rotate; 
+    animation-duration: .5s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
