@@ -1,23 +1,4 @@
-.test{
-    height: 15rem;
-    width: 15rem;
-    background: #222222;
-}
 
-
-.mover{
-    position: relative;
-    background: yellow;
-    border-radius: 15px;
-    height: 30px;
-    width: 30px;
-    transition: 1s;
-}
-.test:hover .mover{
-    position: absolute;
-    top: 50%;
-
-}
 .content{
     display: none;
     width: 100vw;
@@ -80,13 +61,19 @@
 .join-game:hover{
     padding: 1rem 0;
 }
-.join-game:hover span{
+.join-game:hover input{
     font-size: 1.6rem;
 }
 
-.join-game span{
+.join-game input{
     font-size: 1.4rem;
     transition: .3s;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    opacity: 1;
 }
 
 
